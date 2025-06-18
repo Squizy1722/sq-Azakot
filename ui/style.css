@@ -1,0 +1,73 @@
+@font-face{
+    font-family: 'ploni-round';
+    src: url('SecularOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+html{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+        supported by Chrome, Edge, Opera and Firefox */
+}
+
+body {
+     font-family: 'ploni-round';
+     margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  .MainContainer {
+    position: absolute;
+    right: 0%;
+    width: 300px;
+    display: none;
+    will-change: transform, opacity;
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.75);
+        background: rgba(0, 0, 0, 0.788);
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+  }
+
+  .Subtitle {
+    background: rgb(255, 123, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .AlertsContainer {
+    padding: 5px;
+            border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+            transition: all 200ms ease-in-out;
+                        overflow-y: scroll;
+                        height: auto;
+                            max-height: 1015px;
+  }
+
+  .alert {
+    font-size: 20px;
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+            background: rgb(255, 255, 255);
+        color: black;
+        border-radius: 10px;
+      
+  }
+
+  .alert:not(:first-child) {
+    margin-top: 5px;
+  }
